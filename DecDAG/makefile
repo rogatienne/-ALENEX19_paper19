@@ -39,10 +39,10 @@ INCLUDES = -I.
 .SUFFIXES: .cpp
 
 
-headers-1pass: $(OBJECTS) DecDAG.o
-	$(CCC) $(FLAGS) $(DEFINES) $(INCLUDES) $(OBJECTS)  DecDAG.o $(LIBS) -o DecDAG
+headers-1pass: $(OBJECTS) Decr.o
+	$(CCC) $(FLAGS) $(DEFINES) $(INCLUDES) $(OBJECTS)  Decr.o $(LIBS) -o Decr
 
-all: clean DecDAG
+all: clean Decr
 clean: 
 	'rm' *.o
 	
